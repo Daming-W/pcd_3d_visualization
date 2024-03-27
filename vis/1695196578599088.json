@@ -1,0 +1,409 @@
+{
+    "version": "bundle_v1.0",
+    "project": "hd",
+    "project_version": "1.0",
+    "carid": "XMT020",
+    "trigger_time": 1695196578599088,
+    "trigger_name": "lidar_top_32_scan",
+    "stamp": 1695196578606091,
+    "lidar": [
+        {
+            "name": "lidar_top_32_scan",
+            "stamp": 1695196578606091,
+            "sys_time_us": 1695196578599088,
+            "oss_path_json": "",
+            "oss_path_pcd_bin": "",
+            "oss_path_pcd_txt": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/lidar_top_32_scan/1695196578606091.pcd"
+        },
+        {
+            "name": "lidar_front_livox_scan",
+            "stamp": 1695196578603090,
+            "sys_time_us": 1695196578600033,
+            "oss_path_json": "",
+            "oss_path_pcd_bin": "",
+            "oss_path_pcd_txt": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/lidar_front_livox_scan/1695196578603090.pcd"
+        },
+        {
+            "name": "lidar_left_front_16_scan",
+            "stamp": 1695196578606091,
+            "sys_time_us": 1695196578599088,
+            "oss_path_json": "",
+            "oss_path_pcd_bin": "",
+            "oss_path_pcd_txt": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/lidar_left_front_16_scan/1695196578606091.pcd"
+        },
+        {
+            "name": "lidar_right_front_16_scan",
+            "stamp": 1695196578604090,
+            "sys_time_us": 1695196578600089,
+            "oss_path_json": "",
+            "oss_path_pcd_bin": "",
+            "oss_path_pcd_txt": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/lidar_right_front_16_scan/1695196578604090.pcd"
+        },
+        {
+            "name": "lidar_rear_livox_scan",
+            "stamp": 1695196578602089,
+            "sys_time_us": 1695196578600746,
+            "oss_path_json": "",
+            "oss_path_pcd_bin": "",
+            "oss_path_pcd_txt": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/lidar_rear_livox_scan/1695196578602089.pcd"
+        }
+    ],
+    "lidar_merge": [
+        {
+            "name": "merge_lidar",
+            "source": [
+                "lidar_rear_livox_scan",
+                "lidar_right_front_16_scan",
+                "lidar_left_front_16_scan",
+                "lidar_front_livox_scan",
+                "lidar_top_32_scan"
+            ],
+            "oss_path_pcd_bin": "",
+            "oss_path_pcd_txt": "tos://haomo-data-platform/x_etl/hd/2023-09-20/XMT020/merge_scan_lidar/1695196578599088.pcd"
+        }
+    ],
+    "camera": [
+        {
+            "name": "right_fisheye_camera_record",
+            "stamp": 1695196578542066,
+            "exp_ts_us": 1695196578542066,
+            "width": 1920,
+            "height": 1440,
+            "oss_path": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/right_fisheye_camera_record/1695196578542066.jpg"
+        },
+        {
+            "name": "camera_top_front_wide_record",
+            "stamp": 1695196578603090,
+            "exp_ts_us": 1695196578603090,
+            "width": 3840,
+            "height": 2160,
+            "oss_path": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/camera_top_front_wide_record/1695196578603090.jpg"
+        },
+        {
+            "name": "camera_top_front_middle_record",
+            "stamp": 1695196578593086,
+            "exp_ts_us": 1695196578593086,
+            "width": 3840,
+            "height": 2160,
+            "oss_path": "tos://haomo-data-platform/x_resource/hd/2023-09-20/XMT020/media/camera_top_front_middle_record/1695196578593086.jpg"
+        }
+    ],
+    "hardware_config_path": "tos://haomo-data-platform/x_etl/hd/2023-09-20/XMT020/hardware_config/1695196578599088.json",
+    "can_oss_path": "tos://haomo-data-platform/x_etl/hd/2023-09-20/XMT020/can/1695196578599088.json",
+    "sensor_oss_path": "tos://haomo-data-platform/x_etl/hd/2023-09-20/XMT020/sensor/1695196578599088.json",
+    "rtk_data": [
+        {
+            "angle": {
+                "azimuth_angle": 1.043473720550537,
+                "pitch_angle": -1.6602187156677246,
+                "roll_angle": -0.5526856184005737
+            },
+            "fix_mode": 4,
+            "lon_lat_height": {
+                "height": 21.07952308654785,
+                "latitude": 39.75206178924101,
+                "longtitude": 116.48642994394886
+            },
+            "name": "rtk_data",
+            "stamp": 1695196578603090,
+            "sys_time_us": 1695196578599000
+        }
+    ],
+    "objects": [
+        {
+            "className": "car",
+            "id": 0,
+            "position": {
+                "x": 6.127009868621826,
+                "y": -14.645877838134766,
+                "z": 0.987926721572876
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 1.5030255317687988
+            },
+            "dimension": {
+                "width": 2.0983166694641113,
+                "height": 2.416701555252075,
+                "length": 5.991977691650391
+            },
+            "score": 0.9465441107749939,
+            "pointCount": 1112
+        },
+        {
+            "className": "truck",
+            "id": 1,
+            "position": {
+                "x": 5.721706390380859,
+                "y": -25.492475509643555,
+                "z": 1.5195317268371582
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 1.5866750478744507
+            },
+            "dimension": {
+                "width": 2.399099111557007,
+                "height": 2.8499386310577393,
+                "length": 6.141788959503174
+            },
+            "score": 0.8696005940437317,
+            "pointCount": 269
+        },
+        {
+            "className": "pedestrian",
+            "id": 2,
+            "position": {
+                "x": -2.379916191101074,
+                "y": 3.251141309738159,
+                "z": 0.6274980306625366
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 2.9955649375915527
+            },
+            "dimension": {
+                "width": 0.6824246048927307,
+                "height": 1.7409948110580444,
+                "length": 0.6310669183731079
+            },
+            "score": 0.8213576674461365,
+            "pointCount": 747
+        },
+        {
+            "className": "delivery_car",
+            "id": 3,
+            "position": {
+                "x": 0.5053396821022034,
+                "y": -1.808937668800354,
+                "z": 0.5765271186828613
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 0.0625106543302536
+            },
+            "dimension": {
+                "width": 1.0876835584640503,
+                "height": 1.525471568107605,
+                "length": 2.30938982963562
+            },
+            "score": 0.8184123635292053,
+            "pointCount": 6314
+        },
+        {
+            "className": "delivery_car",
+            "id": 4,
+            "position": {
+                "x": 0.637453556060791,
+                "y": 0.06860973685979843,
+                "z": 0.5259112119674683
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 3.108356237411499
+            },
+            "dimension": {
+                "width": 1.0276051759719849,
+                "height": 1.5052822828292847,
+                "length": 2.394296169281006
+            },
+            "score": 0.7669024467468262,
+            "pointCount": 22821
+        },
+        {
+            "className": "pedestrian",
+            "id": 5,
+            "position": {
+                "x": -1.8078994750976562,
+                "y": -2.698978900909424,
+                "z": 0.6155288815498352
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": -3.05108642578125
+            },
+            "dimension": {
+                "width": 0.6173368096351624,
+                "height": 1.6326007843017578,
+                "length": 0.5990467071533203
+            },
+            "score": 0.7476372718811035,
+            "pointCount": 433
+        },
+        {
+            "className": "motorcycle",
+            "id": 6,
+            "position": {
+                "x": 3.409816026687622,
+                "y": -9.885106086730957,
+                "z": 0.41622141003608704
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": -2.1432888507843018
+            },
+            "dimension": {
+                "width": 0.6541256904602051,
+                "height": 1.2702548503875732,
+                "length": 1.5972129106521606
+            },
+            "score": 0.7378256320953369,
+            "pointCount": 248
+        },
+        {
+            "className": "truck",
+            "id": 7,
+            "position": {
+                "x": 0.37526705861091614,
+                "y": 4.651167869567871,
+                "z": 0.9518448114395142
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": -0.0810377225279808
+            },
+            "dimension": {
+                "width": 2.1711161136627197,
+                "height": 2.439345598220825,
+                "length": 6.186736583709717
+            },
+            "score": 0.7349734902381897,
+            "pointCount": 12900
+        },
+        {
+            "className": "pedestrian",
+            "id": 8,
+            "position": {
+                "x": -1.9647554159164429,
+                "y": -1.8881030082702637,
+                "z": 0.360918253660202
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": -2.257427930831909
+            },
+            "dimension": {
+                "width": 0.6131823062896729,
+                "height": 1.1350643634796143,
+                "length": 0.6257769465446472
+            },
+            "score": 0.7194477319717407,
+            "pointCount": 476
+        },
+        {
+            "className": "motorcycle",
+            "id": 10,
+            "position": {
+                "x": -3.3052914142608643,
+                "y": -13.473628997802734,
+                "z": 0.5550212860107422
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 3.0542683601379395
+            },
+            "dimension": {
+                "width": 0.8171156644821167,
+                "height": 1.2635504007339478,
+                "length": 2.0278432369232178
+            },
+            "score": 0.5907754898071289,
+            "pointCount": 76
+        },
+        {
+            "className": "car",
+            "id": 11,
+            "position": {
+                "x": 0.348527729511261,
+                "y": -5.1357598304748535,
+                "z": 0.6288487911224365
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": -1.6155048608779907
+            },
+            "dimension": {
+                "width": 1.9522223472595215,
+                "height": 1.6414073705673218,
+                "length": 4.458247184753418
+            },
+            "score": 0.5660427808761597,
+            "pointCount": 519
+        },
+        {
+            "className": "motorcycle",
+            "id": 13,
+            "position": {
+                "x": -3.4705562591552734,
+                "y": -8.605240821838379,
+                "z": 0.4977375268936157
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 2.9549615383148193
+            },
+            "dimension": {
+                "width": 0.6768558025360107,
+                "height": 1.117490530014038,
+                "length": 1.5731521844863892
+            },
+            "score": 0.4336160123348236,
+            "pointCount": 42
+        },
+        {
+            "className": "motorcycle",
+            "id": 14,
+            "position": {
+                "x": -3.6006174087524414,
+                "y": -10.49349308013916,
+                "z": 0.5642727613449097
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 2.841982126235962
+            },
+            "dimension": {
+                "width": 0.7178459763526917,
+                "height": 1.197324275970459,
+                "length": 1.701684594154358
+            },
+            "score": 0.4301469922065735,
+            "pointCount": 27
+        },
+        {
+            "className": "motorcycle",
+            "id": 16,
+            "position": {
+                "x": -3.645813226699829,
+                "y": -9.429044723510742,
+                "z": 0.5311526656150818
+            },
+            "rotation": {
+                "pitch": 0,
+                "roll": 0,
+                "yaw": 3.1043479442596436
+            },
+            "dimension": {
+                "width": 0.6535399556159973,
+                "height": 1.121109962463379,
+                "length": 1.6049212217330933
+            },
+            "score": 0.40287086367607117,
+            "pointCount": 31
+        }
+    ],
+    "label_clip_id": "XMT020_1695196570_1695196579"
+}
